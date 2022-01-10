@@ -9,7 +9,7 @@
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
 <body>
-  <h1>My Website!!!</h1>
+  <h1>My Website2</h1>
 
   <div id="banner"></div>
 
@@ -18,7 +18,18 @@
   </footer>
 
   <script type="text/babel">
-  
+    const Banner = () => {
+      const title = "Welcome to code cafe"
+      const subtitle = "this is fun"
+      return (
+        <div>
+          <h2>{title.toUpperCase()}</h2>
+          <p>{subtitle}</p>
+        </div>
+      )
+    }
+
+  ReactDOM.render(<Banner />, document.getElementById('banner'))
   </script>
 </body>
 </html>
